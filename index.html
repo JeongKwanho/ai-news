@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 뉴스 아카이브</title>
+<style>
+  :root{--bg:#0b1020;--card:#141b2e;--card2:#1b2540;--ink:#e8ecf6;--sub:#9aa6c4;--line:#27314f;--accent:#6ea8fe;--accent2:#9b8cff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;background:radial-gradient(1200px 600px at 20% -10%,#1a2748 0,transparent 60%),var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 20px 80px}
+  header{text-align:center;margin-bottom:36px}
+  .kicker{display:inline-block;font-size:13px;letter-spacing:.18em;font-weight:700;color:var(--accent);background:rgba(110,168,254,.12);padding:6px 14px;border-radius:999px;margin-bottom:18px;text-transform:uppercase}
+  header h1{font-size:34px;font-weight:800;letter-spacing:-.02em}
+  header h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{margin-top:12px;color:var(--sub);font-size:14px}
+  .section-title{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:var(--sub);margin:34px 0 14px;letter-spacing:.03em}
+  .section-title::after{content:"";flex:1;height:1px;background:var(--line)}
+  .row{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:10px;transition:transform .15s ease,border-color .15s ease}
+  .row:hover{transform:translateY(-2px);border-color:var(--accent)}
+  .seq{font-weight:700;font-size:15px;color:var(--accent);min-width:60px}
+  .meta{color:var(--sub);font-size:14px;flex:1}
+  .go{color:var(--sub);font-size:14px;font-weight:600}
+  .row:hover .go{color:var(--accent)}
+  footer{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);text-align:center;color:var(--sub);font-size:13px}
+  @media (max-width:520px){.meta{font-size:13px}header h1{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="kicker">Archive</span>
+    <h1><span class="grad">AI 뉴스</span> 아카이브</h1>
+    <p class="sub">총 2개 페이지 · 마지막 갱신 2026-06-07 22:25</p>
+  </header>
+
+  <div class="section-title">2026년 6월 7일 (일)</div>
+  <a class="row" href="2026-06-07_2.html">
+    <span class="seq">2회차</span>
+    <span class="meta">뉴스 14건 · 20:06 생성</span>
+    <span class="go">열기 →</span>
+  </a>
+  <a class="row" href="2026-06-07_1.html">
+    <span class="seq">1회차</span>
+    <span class="meta">뉴스 9건 · 18:01 생성</span>
+    <span class="go">열기 →</span>
+  </a>
+
+  <footer>AI 뉴스 자동화 프로젝트 · 검색 → 검증 → 작성 파이프라인</footer>
+</div>
+</body>
+</html>

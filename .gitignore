@@ -1,0 +1,9 @@
+# Publish only the news pages + index to GitHub Pages.
+# Keep source/automation private.
+.claude/
+scripts/
+templates/
+logs/
+PLAN.md
+README.md
+ai_news_2026-06-07.html
